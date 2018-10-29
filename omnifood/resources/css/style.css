@@ -147,7 +147,8 @@ a:active{
 /*----------------------------------*/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -157,7 +158,8 @@ a:active{
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #f39c12;
     border: 1px solid #f39c12;
     color: #fff;
@@ -171,14 +173,17 @@ a:active{
 } 
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #d8890b;
 
     
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit] {
     border: 1px solid #d8890b;
     color: #fff;
 }
@@ -300,7 +305,7 @@ header {
 /*----------------------------------*/
 
 .section-steps{
-    background-color: floralwhite;
+    background-color: #f4f4f4;
 }
 
 .steps-box{
@@ -374,7 +379,7 @@ header {
 }
 
 /*----------------------------------*/
-/* CUSTOMER TESTIMONIALS*/
+/* TESTIMONIALS*/
 /*----------------------------------*/
 
 .section-testimonials {
@@ -415,4 +420,137 @@ cite img{
     border-radius: 50%;
    margin-right: 10px;
     vertical-align: middle;
+}
+
+/*----------------------------------*/
+/* PRICE-PLANS*/
+/*----------------------------------*/
+
+.section-plans{
+    background-color: #f4f4f4;
+}
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #f2f2f2;
+}
+.plan-box div{
+    padding: 5px;
+    border-bottom: 1px solid #e8e8e8;
+    }
+.plan-box div:first-child{
+    background-color: #e8e8e8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+.plan-box div:last-child{
+    text-align: center;
+}
+.plan-price {
+    font-size: 250%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #f39c12;
+    
+}
+.plan-price span{
+    font-size: 40%;
+    font-weight: 300;
+}
+.plan-price-mael{
+    font-size: 80%;
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
+/*----------------------------------*/
+/* SIGN-UP*/
+/*----------------------------------*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=name],
+select[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #afaeae;
+    
+}
+/*----------------------------------*/
+/*FOOTER #191515*/
+/*----------------------------------*/
+footer{
+    background-color: #333;
+    padding: 20px;
+    font-size: 70%;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+   
+}
+.social-links{
+    list-style: none;
+    float: right;
+   
+}
+.footer-nav li,
+.social-links li{
+     display: inline-block;
+     margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: rgba(250, 164, 0, 0.87);
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 1000%;
+}
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+    transition: color 0.2s;
+}
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+.ion-social-twitter:hover{
+    color: #55acee;
+}
+.ion-social-googleplus:hover{
+    color: #dd4b39;
+}
+.ion-social-instagram:hover{
+    color: #e95950;
+}
+footer p{
+    color: #888;
+    text-align: center;
+    margin-top: 15px;
 }
